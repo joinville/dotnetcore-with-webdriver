@@ -11,7 +11,7 @@ integrated_test:
     - docker
   only:
     - branches
-  image: joinville/dotnetcore-with-webdriver:0.1.1
+  image: joinville/dotnetcore-with-webdriver:2.1-sdk-jessie
   script:
     - dotnet run -p src/MyProject/MyProject.csproj > /tmp/dotnet.log & sleep 30s
     - dotnet test test/MyProject.Integrated.csproj
